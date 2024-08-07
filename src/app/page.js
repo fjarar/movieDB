@@ -18,7 +18,7 @@ async function Home({searchParams}) {
   }
 
   const results = data.results;
-  
+
   return (
     <div>
       <Results results={results}/>

@@ -4,16 +4,19 @@ import Link from "next/link";
 import React, { Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 
-const Navbaritem = ({ title, param }) => {
+function Search(){
   const searchParams = useSearchParams();
   const genre = searchParams.get("genre");
+  return genre;
+}
 
+const Navbaritem = ({ title, param }) => {
   return (
     <div>
       <Suspense>
         <Link
           className={`hover:text-amber-600 font-semibold ${
-            genre === param
+            <Suspense><Search /></Suspense> === param
               ? "underline underline-offset-8 decoration-4 decoration-amber-500 rounded-lg"
               : ""
           }`}

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 import MenuItem from "./MenuItem";
 import { AiFillHome } from "react-icons/ai";
 import { BsFillInfoCircleFill } from "react-icons/bs";
@@ -9,8 +9,16 @@ const Header = () => {
   return (
     <div className="flex justify-between items-center p-3 max-w-6xl mx-auto">
       <div className="flex gap-4">
-        <MenuItem title="home" address="/" Icon={AiFillHome} />
-        <MenuItem title="about" address="/about" Icon={BsFillInfoCircleFill} />
+        <Suspense>
+          <MenuItem title="home" address="/" Icon={AiFillHome} />
+        </Suspense>
+        <Suspense>
+          <MenuItem
+            title="about"
+            address="/about"
+            Icon={BsFillInfoCircleFill}
+          />
+        </Suspense>
       </div>
       <div className="flex items-center gap-4">
         <DarkModeSwitch />

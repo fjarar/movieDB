@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-white rounded-lg shadow sm:flex sm:items-center sm:justify-between p-4 sm:p-6 xl:p-8 dark:bg-gray-800 antialiased">
+    <footer className="bg-white rounded-lg flex flex-col shadow sm:flex sm:items-center sm:justify-between p-2 sm:p-4 xl:p-6 dark:bg-gray-800 antialiased">
       <p className="mb-4 text-sm text-center text-gray-500 dark:text-gray-400 sm:mb-0">
         &copy; 2024{" "}
         <a href="https://github.com/fjarar" className="hover:underline" target="_blank">
@@ -10,6 +10,7 @@ const Footer = () => {
         </a>
         . All rights reserved.
       </p>
+      <hr className="my-4 border-solid w-10/12 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-6"/>
       <div className="flex justify-center items-center space-x-1">
 
         <a

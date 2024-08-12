@@ -51,7 +51,7 @@ const SearchBox = () => {
         </button>
       </form>
       {inputValue && (
-        <p className="m-2">
+        <p className="m-2 px-5 max-w-6xl">
           Buscaste: <span className="font-bold">{inputValue}</span>
         </p>
       )}

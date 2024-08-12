@@ -26,7 +26,7 @@ const Header = () => {
           <span className="text-2xl font-bold bg-amber-500 py-1 px-2 rounded-lg">
             PeliculApp
           </span>
-          <span className="text-xl hidden sm:inline">Clone</span>
+          {/* <span className="text-xl hidden sm:inline">Clone</span> */}
         </Link>
       </div>
     </div>

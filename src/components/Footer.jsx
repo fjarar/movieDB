@@ -3,14 +3,14 @@ import React from "react";
 const Footer = () => {
   return (
     <footer className="bg-white rounded-lg flex flex-col shadow sm:flex sm:items-center sm:justify-between p-2 sm:p-4 xl:p-6 dark:bg-gray-800 antialiased">
-      <p className="mb-4 text-sm text-center text-gray-500 dark:text-gray-400 sm:mb-0">
+      <p className="mb-4 text-sm text-center text-gray-500 dark:text-gray-400 sm:mb-2">
         &copy; 2024{" "}
         <a href="https://github.com/fjarar" className="hover:underline" target="_blank">
           FJR
         </a>
         . All rights reserved.
       </p>
-      <hr className="my-4 border-solid w-10/12 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-6"/>
+      <hr className="sm:my-4 md:my-4 border-solid w-10/12 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-6"/>
       <div className="flex justify-center items-center space-x-1">
 
         <a
